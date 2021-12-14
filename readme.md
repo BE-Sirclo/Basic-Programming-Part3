@@ -1,4 +1,4 @@
-## Cara mengerjakan tugas hari ke 2
+## Cara mengerjakan tugas Basic Programming Part 2
 
 clone project ini dengan cara
 
