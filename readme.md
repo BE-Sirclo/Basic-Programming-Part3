@@ -1,4 +1,4 @@
-## Cara mengerjakan tugas Basic Programming Part 3
+## BASIC PROGRAMMING PART 3
 
 clone project ini dengan cara
 
