@@ -2,12 +2,14 @@ package main
 
 import "fmt"
 
-func Palindrome(input string) bool {
-	// write your code
+func UbahHuruf(sentence string) string {
+	// your code here
 }
 
 func main() {
-	fmt.Println(Palindrome("kasur rusak"))
-	fmt.Println(Palindrome("civic"))
-	fmt.Println(Palindrome("kasur"))
+	fmt.Println(UbahHuruf("SEPULSA OKE"))     // COZEVCK YUO
+	fmt.Println(UbahHuruf("ALTERRA ACADEMY")) // KVDOBBK KMKNOWI
+	fmt.Println(UbahHuruf("INDONESIA"))       // SXNYXOCSK
+	fmt.Println(UbahHuruf("GOLANG"))          // QYVKXQ
+	fmt.Println(UbahHuruf("PROGRAMMER"))      // ZBYQBKWWOB
 }

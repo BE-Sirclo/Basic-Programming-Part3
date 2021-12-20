@@ -6,42 +6,20 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestPalindrome(t *testing.T) {
-	var testcases = []struct {
-		testcase string
-		input    string
-		output   bool
-	}{
-		{
-			testcase: "Case 1",
-			input:    "civic",
-			output:   true,
-		},
-		{
-			testcase: "Case 2",
-			input:    "katak",
-			output:   true,
-		},
-		{
-			testcase: "Case 3",
-			input:    "kasur rusak",
-			output:   true,
-		},
-		{
-			testcase: "Case 4",
-			input:    "kupu-kupa",
-			output:   false,
-		},
-		{
-			testcase: "Case 5",
-			input:    "lion",
-			output:   false,
-		},
-	}
-	for _, value := range testcases {
-		result := Palindrome(value.input)
-		t.Run(value.testcase, func(t *testing.T) {
-			assert.Equal(t, value.output, result)
-		})
-	}
+func TestUbahHuruf(t *testing.T) {
+	t.Run("Case: SEPULSA OKE ", func(t *testing.T) {
+		assert.Equal(t, "COZEVCK YUO", UbahHuruf("SEPULSA OKE"), "Hasil output tidak sesuai")
+	})
+	t.Run("Case: ALTERRA ACADEMY ", func(t *testing.T) {
+		assert.Equal(t, "KVDOBBK KMKNOWI", UbahHuruf("ALTERRA ACADEMY"), "Hasil output tidak sesuai")
+	})
+	t.Run("Case: INDONESIA ", func(t *testing.T) {
+		assert.Equal(t, "SXNYXOCSK", UbahHuruf("INDONESIA"), "Hasil output tidak sesuai")
+	})
+	t.Run("Case: GOLANG ", func(t *testing.T) {
+		assert.Equal(t, "QYVKXQ", UbahHuruf("GOLANG"), "Hasil output tidak sesuai")
+	})
+	t.Run("Case: PROGRAMMER ", func(t *testing.T) {
+		assert.Equal(t, "ZBYQBKWWOB", UbahHuruf("PROGRAMMER"), "Hasil output tidak sesuai")
+	})
 }

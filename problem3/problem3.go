@@ -2,12 +2,10 @@ package main
 
 import "fmt"
 
-func PrimeNumber(number int) bool {
-	// write your coude
+func CetakTabelPerkalian(number int) string {
+	// your code here
 }
 
 func main() {
-	fmt.Println(PrimeNumber(3))
-	fmt.Println(PrimeNumber(7))
-	fmt.Println(PrimeNumber(10))
+	fmt.Println(CetakTabelPerkalian(9))
 }
